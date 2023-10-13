@@ -95,10 +95,4 @@ window.onload = function() {
   const GeneratedDomains8 = CustomDomainGenerator(numberOfDomains8);
   domainNameElement8[0].innerText = GeneratedDomains8;
 
-  /* Copy and Paste
-  const domainNameElement# = document.getElementsByClassName();
-  const numberOfDomains# = 1;
-  const GeneratedDomains# = CustomDomainGenerator(numberOfDomains#);
-  domainNameElement#[0].innerText = GeneratedDomains#;
-  */
 };
