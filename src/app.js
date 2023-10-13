@@ -10,6 +10,7 @@ window.onload = function() {
   let pronouns = ["the", "our", "each", "someones", "their"];
   let adjs = ["great", "depressed", "big", "fast", "aggresive"];
   let nouns = ["jogger", "racoon", "athlete", "developer", "driver"];
+  let tlds = [".com", ".us", ".ca", ".dev", ".pro"];
 
   // Function to choose random pronouns, adjs, and nouns for domain name
   function getRandomChoice(array) {
@@ -21,8 +22,9 @@ window.onload = function() {
     let displayedPronouns = getRandomChoice(pronouns);
     let displayedAdjs = getRandomChoice(adjs);
     let displayedNouns = getRandomChoice(nouns);
+    let displayedTlds = getRandomChoice(tlds);
 
-    return `${displayedPronouns}${displayedAdjs}${displayedNouns}.com`;
+    return `${displayedPronouns}${displayedAdjs}${displayedNouns}${displayedTlds}`;
   }
 
   // Function to Create Multiple Domain Names
@@ -94,5 +96,4 @@ window.onload = function() {
   const numberOfDomains8 = 1;
   const GeneratedDomains8 = CustomDomainGenerator(numberOfDomains8);
   domainNameElement8[0].innerText = GeneratedDomains8;
-
 };
